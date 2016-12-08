@@ -17,4 +17,6 @@ But in creating that image it occurred to me that this:
 
 might also be feasable (possibly better?). The SSE request now looks a lot like a complex "Logic Controller". Again the SSE request must be configured to act on incoming requests. But rather than send out a signal, the "SSE Controller" fires off one of it's child Samplers (possibly with a parameter) depending on the event received. 
 
+Problem is that I need to fire off an request to get the events. This request needs to be fired after the SSE request was started, so as to not miss events
+
 Not sure any of this will be doable.
